@@ -25,4 +25,9 @@ public class City {
      */
     private String cityName;
 
+    /**
+     * 描述
+     */
+    private String description;
+
 }

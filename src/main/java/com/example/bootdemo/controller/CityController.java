@@ -19,10 +19,14 @@ public class CityController {
     @Autowired
     private CityService cityService;
 
+    @Autowired
+    private GirlProperties girlProperties;
+
     @RequestMapping("/findByName")
     public String findByName(Model model, String cityName){
         City city = cityService.findByName(cityName);
         model.addAttribute("city",city);
+        model.addAttribute("girl","年龄："+girlProperties.getAge()+"身高："+girlProperties.getHigh());
         return "city/detail";
     }
 }

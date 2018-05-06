@@ -1,0 +1,15 @@
+spring.datasource:
+  url: jdbc:mysql://localhost:3306/springbootdb?useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true
+  username: root
+  password: 123456
+  driverClassName: com.mysql.jdbc.Driver
+server:
+  port: 8883
+#mybatis配置
+mybatis:
+  typeAliasesPackage: com.example.bootdemo.domain
+  mapperLocations: classpath:mapper/*.xml
+girl:
+  age: 25
+  high: 158
+
